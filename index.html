@@ -34,7 +34,7 @@
 	      {% for emojicons in files %}
 	        {% if emojicons.path contains '/emoji/' %}
 	          {% assign filename = emojicons.path | replace:'/emoji/','' %}
-	          {% assign name = filename | replace:'.png','' | replace:'+','--' %}
+	          {% assign name = filename | replace:'@2x.png','' | replace:'+','--' %}
 	          <li class="emoji" data-clipboard-text="{{ name }}">
 	            <i class="em em-{{ name }}"></i> em-<span class="name">{{ name }}</span>
 	          </li>
