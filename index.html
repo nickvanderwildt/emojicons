@@ -3,49 +3,45 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Emojicons CSS</title>
-    <meta charset="utf-8">
-    <meta property="og:title" content="Emojicons CSS" />
-    <meta property="og:image" content="http://afeld.github.io/emoji-css/emoji/thumbsup.png" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://nickvanderwildt.github.io/emojicons/" />
-    <link rel="shortcut icon" href="public/favicon.ico"/>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto+Mono:400,700" rel="stylesheet">
-    <link href="emoji.css" rel="stylesheet">
-    <link href="public/style.css" rel="stylesheet">
-  </head>
-  <body>
+<head>
+  <title>Emojicons CSS</title>
+  <meta charset="utf-8">
+  <meta property="og:title" content="Emojicons CSS" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://nickvanderwildt.github.io/emojicons/" />
+  <link rel="shortcut icon" href="public/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto+Mono:400,700" rel="stylesheet">
+  <link href="emoji.css" rel="stylesheet">
+  <link href="public/style.css" rel="stylesheet">
+</head>
+<body>
 
-		<header>
-			<h1>Emojicons CSS</h1>
-		</header>
+<header>
+	<h1>Emojicons CSS</h1>
+</header>
 
-		<div class="wrap">
+<div class="wrap">
 
-	    <p>
-	      Include Apple's emoji from the iOS 10.2 release with CSS. Include the (minified) stylesheet from below and then add <code>&lt;i&gt;</code> tags to insert emoji. That's it!<br>
-	    </p>
-			
-			<pre><code>&lt;link href="https://nickvanderwildt.github.io/emojicons/emoji.css" rel="stylesheet"&gt;<br>&lt;i class="em em-1042"&gt;&lt;/i&gt;</code></pre>
+  <p>Include Apple's latest emoji from the iOS 10.2 release with CSS. Include the (minified) stylesheet from below and then add <code>&lt;i&gt;</code> tags to insert emoji. That's it!<br></p>
+	<pre><code>&lt;link href="https://nickvanderwildt.github.io/emojicons/emoji.css" rel="stylesheet"&gt;<br>&lt;i class="em em-1042"&gt;&lt;/i&gt;</code></pre>
 
-			<main class="emoji-list">
-				<ul class="emojis">
-		      {% comment %} This needs to match emoji.scss. {% endcomment %}
-		      {% assign files = site.static_files | sort:'path' %}
-		      {% for emojicons in files %}
-		        {% if emojicons.path contains '/emoji/' %}
-		          {% assign filename = emojicons.path | replace:'/emoji/','' %}
-		          {% assign name = filename | replace:'.png','' | replace:'+','--' %}
-		          <li class="emoji">
-		            <i class="em em-{{ name }}"></i> em-<span class="name">{{ name }}</span>
-		          </li>
-		        {% endif %}
-		      {% endfor %}
-		    </ul>
-			</main>
+	<main class="emoji-list">
+		<ul class="emojis">
+      {% comment %} This needs to match emoji.scss. {% endcomment %}
+      {% assign files = site.static_files | sort:'path' %}
+      {% for emojicons in files %}
+        {% if emojicons.path contains '/emoji/' %}
+          {% assign filename = emojicons.path | replace:'/emoji/','' %}
+          {% assign name = filename | replace:'.png','' | replace:'+','--' %}
+          <li class="emoji">
+            <i class="em em-{{ name }}"></i> em-<span class="name">{{ name }}</span>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+	</main>
 
-		</div>
+</div>
 
-  </body>
+</body>
 </html>
