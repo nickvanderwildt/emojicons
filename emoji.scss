@@ -1,6 +1,70 @@
 ---
 ---
 
+{% for emojicons in site.static_files %}
+  {% if emojicons.path contains '/em/smileys/' %}
+    .em-{{ emojicons.basename }} {
+      background: url('em/smileys/{{ emojicons.name }}');
+    }
+  {% endif %}
+{% endfor %}
+
+{% for emojicons in site.static_files %}
+  {% if emojicons.path contains '/em/nature/' %}
+    .em-{{ emojicons.basename }} {
+      background: url('em/nature/{{ emojicons.name }}');
+    }
+  {% endif %}
+{% endfor %}
+
+{% for emojicons in site.static_files %}
+  {% if emojicons.path contains '/em/food/' %}
+    .em-{{ emojicons.basename }} {
+      background: url('em/food/{{ emojicons.name }}');
+    }
+  {% endif %}
+{% endfor %}
+
+{% for emojicons in site.static_files %}
+  {% if emojicons.path contains '/em/activity/' %}
+    .em-{{ emojicons.basename }} {
+      background: url('em/activity/{{ emojicons.name }}');
+    }
+  {% endif %}
+{% endfor %}
+
+{% for emojicons in site.static_files %}
+  {% if emojicons.path contains '/em/travel/' %}
+    .em-{{ emojicons.basename }} {
+      background: url('em/travel/{{ emojicons.name }}');
+    }
+  {% endif %}
+{% endfor %}
+
+{% for emojicons in site.static_files %}
+  {% if emojicons.path contains '/em/objects/' %}
+    .em-{{ emojicons.basename }} {
+      background: url('em/objects/{{ emojicons.name }}');
+    }
+  {% endif %}
+{% endfor %}
+
+{% for emojicons in site.static_files %}
+  {% if emojicons.path contains '/em/symbols/' %}
+    .em-{{ emojicons.basename }} {
+      background: url('em/symbols/{{ emojicons.name }}');
+    }
+  {% endif %}
+{% endfor %}
+
+{% for emojicons in site.static_files %}
+  {% if emojicons.path contains '/em/flags/' %}
+    .em-{{ emojicons.basename }} {
+      background: url('em/flags/{{ emojicons.name }}');
+    }
+  {% endif %}
+{% endfor %}
+
 .em {
   height: 1.5em;
   width: 1.5em;
@@ -11,11 +75,3 @@
   display: inline-block;
   vertical-align: middle;
 }
-
-{% for emojicons in site.static_files %}
-  {% if emojicons.path contains '/emoji/' %}
-    .em-{{ emojicons.basename }} {
-      background-image: url('{{ site.baseurl }}{{ emojicons.path }}');
-    }
-  {% endif %}
-{% endfor %}
