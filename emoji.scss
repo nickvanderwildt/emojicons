@@ -16,7 +16,7 @@
 {% for emojicons in site.static_files %}
   {% if emojicons.path contains '/emoji/' %}
     .em-{{ emojicons.basename }} {
-      background-image: url('{{ emojicons.path }}');
+      background-image: url('{{ site.baseurl }}{{ emojicons.path }}');
     }
   {% endif %}
 {% endfor %}
