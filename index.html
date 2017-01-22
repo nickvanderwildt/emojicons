@@ -37,15 +37,84 @@ layout: compress
 	<pre><code>&lt;link href="https://nickvanderwildt.github.io/emojicons/emoji.css" rel="stylesheet"&gt;<br>&lt;i class="em em-1042"&gt;&lt;/i&gt;</code></pre>
 
 	<main class="emoji-list">
+		<h2>Smileys &amp; people</h2>
 		<ul class="emojis">
     {% assign files = site.static_files | sort:'path' %}
     {% for emojicons in files %}
-    {% if emojicons.path contains '/emoji/' %}
-    {% assign filename = emojicons.path | replace:'/emoji/','' %}
-    {% assign name = filename | replace:'.png','' | replace:'+','--' %}
-    <li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
-    {% endif %}
+    	{% if emojicons.path contains '/emoji/smileys-people/' %}
+    		<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+    	{% endif %}
     {% endfor %}
+    </ul>
+
+		<h2>Animals &amp; nature</h2>
+		<ul class="emojis">
+    {% assign files = site.static_files | sort:'path' %}
+  	{% for emojicons in files %}
+  		{% if emojicons.path contains '/emoji/animals-nature/' %}
+  			<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+  		{% endif %}
+  	{% endfor %}
+    </ul>
+
+		<h2>Food &amp; drink</h2>
+		<ul class="emojis">
+    {% assign files = site.static_files | sort:'path' %}
+  	{% for emojicons in files %}
+  		{% if emojicons.path contains '/emoji/food-drink/' %}
+  			<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+  		{% endif %}
+  	{% endfor %}
+    </ul>
+
+		<h2>Activity</h2>
+		<ul class="emojis">
+    {% assign files = site.static_files | sort:'path' %}
+  	{% for emojicons in files %}
+  		{% if emojicons.path contains '/emoji/activity/' %}
+  			<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+  		{% endif %}
+  	{% endfor %}
+    </ul>
+
+		<h2>Travel &amp; places</h2>
+		<ul class="emojis">
+    {% assign files = site.static_files | sort:'path' %}
+  	{% for emojicons in files %}
+  		{% if emojicons.path contains '/emoji/travel-places/' %}
+  			<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+  		{% endif %}
+  	{% endfor %}
+    </ul>
+
+		<h2>Objects</h2>
+		<ul class="emojis">
+    {% assign files = site.static_files | sort:'path' %}
+  	{% for emojicons in files %}
+  		{% if emojicons.path contains '/emoji/objects/' %}
+  			<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+  		{% endif %}
+  	{% endfor %}
+    </ul>
+
+		<h2>Symbols</h2>
+		<ul class="emojis">
+    {% assign files = site.static_files | sort:'path' %}
+  	{% for emojicons in files %}
+  		{% if emojicons.path contains '/emoji/symbols/' %}
+  			<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+  		{% endif %}
+  	{% endfor %}
+    </ul>
+
+		<h2>Flags</h2>
+		<ul class="emojis">
+    {% assign files = site.static_files | sort:'path' %}
+  	{% for emojicons in files %}
+  		{% if emojicons.path contains '/emoji/flags/' %}
+  			<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+  		{% endif %}
+  	{% endfor %}
     </ul>
 	</main>
 

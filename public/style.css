@@ -76,7 +76,20 @@ a {
 
 a:hover { color: #999; }
 
+h2 {
+	display: block;
+	text-transform: uppercase;
+	clear: both;
+	line-height: 1;
+	margin: 60px 0 20px;
+  font-size: 17px; }
+
 .emoji-list {
+	margin: 40px 0 80px;
+	padding: 0;
+}
+
+ul.emojis {
 	-webkit-column-width: 120px;
 	   -moz-column-width: 120px;
 					column-width: 120px;
@@ -86,15 +99,10 @@ a:hover { color: #999; }
   -webkit-column-gap: 	15px;
  		 -moz-column-gap: 15px;
 		 			column-gap: 15px;
-	margin: 40px 0 80px;
-	padding: 0;
-	line-height: 2.5;
-}
-
-ul.emojis {
   font-family: 'Roboto Mono', monospace;
  	margin: 0;
-	padding:0; }
+	padding:0;
+ 	line-height: 2.5; }
 
 ul.emojis > li {
   list-style: none;

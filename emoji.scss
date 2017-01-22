@@ -12,7 +12,6 @@
   vertical-align: middle;
 }
 
-{% comment %} This needs to match index.html. {% endcomment %}
 {% for emojicons in site.static_files %}
   {% if emojicons.path contains '/emoji/' %}
     .em-{{ emojicons.basename }} {
