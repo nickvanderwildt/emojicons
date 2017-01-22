@@ -43,7 +43,7 @@ layout: compress
     {% if emojicons.path contains '/emoji/' %}
     {% assign filename = emojicons.path | replace:'/emoji/','' %}
     {% assign name = filename | replace:'.png','' | replace:'+','--' %}
-    <li class="emoji"><i class="em em-{{ name }}"></i> em-<span class="name">{{ name }}</span></li>
+    <li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
     {% endif %}
     {% endfor %}
     </ul>
