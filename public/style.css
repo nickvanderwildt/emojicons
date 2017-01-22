@@ -21,12 +21,12 @@ html {
 header {
 	background-image: url('background.jpg');
 	background-size: contain;
-	background-position: center center;
+	background-position: top center;
 	background-repeat: no-repeat;
 	display: block;
 	min-height: 240px;
 	position: relative;
-	margin: 60px 0 30px;
+	margin: -15px 0 30px;
 }
 
 h1 {
