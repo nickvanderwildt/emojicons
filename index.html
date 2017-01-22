@@ -42,7 +42,7 @@ layout: compress
 		<ul class="emojis">
     {% assign files = site.static_files | sort:'path' %}
     {% for emojicons in files %}
-    	{% if emojicons.path contains '/emoji/smileys-people/' %}
+    	{% if emojicons.path contains '/emoji/s-p/' %}
     		<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
     	{% endif %}
     {% endfor %}
