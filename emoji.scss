@@ -1,0 +1,24 @@
+---
+---
+
+.em {
+  height: 1.5em;
+  width: 1.5em;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+{% comment %} This needs to match index.html. {% endcomment %}
+{% for emojicons in site.static_files %}
+  {% if emojicons.path contains '/emoji/' %}
+    {% assign filename = emojicons.path | replace:'/emoji/','' %}
+    {% assign name = filename | replace:'.png','' | replace:'+','--' %}
+    .em-{{ name }} {
+      background-image: url('emoji/{{ filename }}');
+    }
+  {% endif %}
+{% endfor %}
