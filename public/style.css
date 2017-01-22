@@ -1,13 +1,13 @@
 html {
-	color: #fff;
-	background: black;
+	color: #444;
 	font-family: 'Roboto Mono', monospace;
-	font-size: 20px;
+	font-size: 18px;
 	letter-spacing: 1px;
 	line-height: 1.9;
 	margin: 0;
 	padding: 0;
-	-webkit-font-smoothing: antialiased; }
+	-webkit-font-smoothing: antialiased;
+	image-rendering: crisp-edges; }
 
 h1 {
   margin: 0;
@@ -51,13 +51,8 @@ pre > code {
   padding: 0;
 }
 
-#content {
-  margin: 0 auto;
-  padding: 0 30px; }
-  #header {
-    max-width: 80%;
-    overflow: hidden;
-    zoom: 1;
-    position: relative;
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    padding: 10px 0 7px 0; }
+.wrap {
+	display: block;
+	width: 680px;
+	margin: 0 auto;
+}
