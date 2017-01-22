@@ -1,6 +1,6 @@
-# Emoji CSS :smiley:
+# Emojicons CSS :smiley:
 
-An easy way to include emoji from Apple 10.2 in your HTML. Inspired by [Emoji CSS](https://afeld.github.io/emoji-css/); site ripped off of [Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/).
+An easy way to include emoji from Apple 10.2 in your HTML. Heavily inspired by [Emoji CSS](https://afeld.github.io/emoji-css/), who has provided us with an excellent solution, yet with the old emoji's; site blatantly copied off of [Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/).
 
 ## Running Locally
 
