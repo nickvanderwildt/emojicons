@@ -10,13 +10,19 @@
   background-size: contain;
   display: inline-block;
   vertical-align: middle;
+
+	image-rendering: -moz-crisp-edges;         /* Firefox */
+	image-rendering:   -o-crisp-edges;         /* Opera */
+	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
 {% comment %} This needs to match index.html. {% endcomment %}
 {% for emojicons in site.static_files %}
   {% if emojicons.path contains '/emoji/' %}
     {% assign filename = emojicons.path | replace:'/emoji/','' %}
-    {% assign name = filename | replace:'@2x.png','' | replace:'+','--' %}
+    {% assign name = filename | replace:'.png','' | replace:'+','--' %}
     .em-{{ name }} {
       background-image: url('emoji/{{ filename }}');
     }
