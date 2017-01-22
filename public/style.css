@@ -34,11 +34,6 @@ ul {
   li {
     list-style: none;
     margin-bottom: .5em; }
-    li .hover { margin-left: -4px; }
-    li img {
-      vertical-align: middle;
-      height: 22px;
-      width: 22px; }
 
 pre,
 code {
@@ -66,45 +61,3 @@ pre > code {
     position: relative;
     border-bottom: 1px solid rgba(0,0,0,.1);
     padding: 10px 0 7px 0; }
-
-.search {
-  position: absolute;
-  top: 18px;
-  right: 0;
-  padding: 5px 15px;
-  font: inherit;
-  border-radius: 20px;
-  border: 1px solid rgba(0,0,0,.2); }
-  .search:focus {
-    outline: none;
-    border-color: rgba(82, 168, 236, 0.8);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(82, 168, 236, 0.3); }
-  .search:-moz-placeholder { color: #a1a1a1; }
-
-@media screen and (max-width: 640px) {
-  .search {
-    position: relative;
-    top: 0; }
-}
-
-.jnotify-container {
-  position: fixed;
-  top: 1em;
-  right: 1em;
-  z-index: 999; }
-  .jnotify-notification {
-    position: relative;
-    margin-bottom: .5em; }
-  .jnotify-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.33);
-    border-radius: 10px; }
-  .jnotify-message {
-    position: relative;
-    padding: .5em 1em;
-    color: #fff;
-    font: inherit; }
