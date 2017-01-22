@@ -55,8 +55,8 @@ p {
 
 pre,
 code {
-  background-color: #111;
-  border-radius: 3px;
+  background-color: #333;
+  border-radius: 4px;
 	font-size: 16px;
 	line-height: 1.2;
   color: #FFF;
@@ -66,7 +66,7 @@ code {
   white-space: -o-pre-wrap;
   word-wrap: break-word; }
 
-pre { padding: 15px; }
+pre { padding: 14px 15px 15px; }
 code { padding: 3px 4px; }
 pre > code { padding: 0; }
 
