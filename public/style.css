@@ -1,8 +1,13 @@
 html {
-  color: #444;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 18px;
-  line-height: 1.5; }
+	color: #fff;
+	background: black;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 1.9;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased; }
 
 h1 {
   margin: 0;
