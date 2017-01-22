@@ -22,7 +22,7 @@
     </header>
     <p>
       Want to include emoji in your HTML? Just include the (minified) stylesheet below, then add <code>&lt;i&gt;</code> tags to insert emoji. That's it!<br>
-      <pre><code>&lt;link href="https://nickvanderwildt.github.io/emojicons/emoji-hires.css" rel="stylesheet"&gt;<br>&lt;i class="em em-1042"&gt;&lt;/i&gt;</code></pre>
+      <pre><code>&lt;link href="https://nickvanderwildt.github.io/emojicons/emoji.css" rel="stylesheet"&gt;<br>&lt;i class="em em-1042"&gt;&lt;/i&gt;</code></pre>
     </p>
 
 		<main class="emoji-list">
@@ -30,8 +30,8 @@
 	      {% comment %} This needs to match emoji.scss. {% endcomment %}
 	      {% assign files = site.static_files | sort:'path' %}
 	      {% for emojicons in files %}
-	        {% if emojicons.path contains '/emoji-hires/' %}
-	          {% assign filename = emojicons.path | replace:'/emoji-hires/','' %}
+	        {% if emojicons.path contains '/emoji/' %}
+	          {% assign filename = emojicons.path | replace:'/emoji/','' %}
 	          {% assign name = filename | replace:'@2x.png','' | replace:'+','--' %}
 	          <li class="emoji">
 	            <i class="em em-{{ name }}"></i> em-<span class="name">{{ name }}</span>
