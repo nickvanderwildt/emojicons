@@ -42,8 +42,8 @@ layout: compress
 		<ul class="emojis">
     {% assign files = site.static_files | sort:'path' %}
     {% for emojicons in files %}
-    	{% if emojicons.path contains '/em/smileys/' %}
-    		<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+    	{% if emojicons.path contains '/em/smiley/' %}
+    		<li class="emoji"><i class="em em{{ emojicons.basename }}"></i> em<span class="name">{{ emojicons.basename }}</span></li>
     	{% endif %}
     {% endfor %}
     </ul>
@@ -53,7 +53,7 @@ layout: compress
     {% assign files = site.static_files | sort:'path' %}
   	{% for emojicons in files %}
   		{% if emojicons.path contains '/em/nature/' %}
-  			<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+  			<li class="emoji"><i class="em em{{ emojicons.basename }}"></i> em<span class="name">{{ emojicons.basename }}</span></li>
   		{% endif %}
   	{% endfor %}
     </ul>
@@ -63,7 +63,7 @@ layout: compress
     {% assign files = site.static_files | sort:'path' %}
   	{% for emojicons in files %}
   		{% if emojicons.path contains '/em/food/' %}
-  			<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+  			<li class="emoji"><i class="em em{{ emojicons.basename }}"></i> em<span class="name">{{ emojicons.basename }}</span></li>
   		{% endif %}
   	{% endfor %}
     </ul>
@@ -73,7 +73,7 @@ layout: compress
     {% assign files = site.static_files | sort:'path' %}
   	{% for emojicons in files %}
   		{% if emojicons.path contains '/em/activity/' %}
-  			<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+  			<li class="emoji"><i class="em em{{ emojicons.basename }}"></i> em<span class="name">{{ emojicons.basename }}</span></li>
   		{% endif %}
   	{% endfor %}
     </ul>
@@ -83,7 +83,7 @@ layout: compress
     {% assign files = site.static_files | sort:'path' %}
   	{% for emojicons in files %}
   		{% if emojicons.path contains '/em/travel/' %}
-  			<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+  			<li class="emoji"><i class="em em{{ emojicons.basename }}"></i> em<span class="name">{{ emojicons.basename }}</span></li>
   		{% endif %}
   	{% endfor %}
     </ul>
@@ -92,8 +92,8 @@ layout: compress
 		<ul class="emojis">
     {% assign files = site.static_files | sort:'path' %}
   	{% for emojicons in files %}
-  		{% if emojicons.path contains '/em/objects/' %}
-  			<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+  		{% if emojicons.path contains '/em/object/' %}
+  			<li class="emoji"><i class="em em{{ emojicons.basename }}"></i> em<span class="name">{{ emojicons.basename }}</span></li>
   		{% endif %}
   	{% endfor %}
     </ul>
@@ -102,8 +102,8 @@ layout: compress
 		<ul class="emojis">
     {% assign files = site.static_files | sort:'path' %}
   	{% for emojicons in files %}
-  		{% if emojicons.path contains '/em/symbols/' %}
-  			<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+  		{% if emojicons.path contains '/em/symbol/' %}
+  			<li class="emoji"><i class="em em{{ emojicons.basename }}"></i> em<span class="name">{{ emojicons.basename }}</span></li>
   		{% endif %}
   	{% endfor %}
     </ul>
@@ -112,8 +112,8 @@ layout: compress
 		<ul class="emojis">
     {% assign files = site.static_files | sort:'path' %}
   	{% for emojicons in files %}
-  		{% if emojicons.path contains '/em/flags/' %}
-  			<li class="emoji"><i class="em em-{{ emojicons.basename }}"></i> em-<span class="name">{{ emojicons.basename }}</span></li>
+  		{% if emojicons.path contains '/em/flag/' %}
+  			<li class="emoji"><i class="em em{{ emojicons.basename }}"></i> em<span class="name">{{ emojicons.basename }}</span></li>
   		{% endif %}
   	{% endfor %}
     </ul>

@@ -2,16 +2,16 @@
 ---
 
 {% for emojicons in site.static_files %}
-  {% if emojicons.path contains '/em/smileys/' %}
-    .em-{{ emojicons.basename }} {
-      background: url('em/smileys/{{ emojicons.name }}');
+  {% if emojicons.path contains '/em/smiley/' %}
+    .em{{ emojicons.basename }} {
+      background: url('em/smiley/{{ emojicons.name }}');
     }
   {% endif %}
 {% endfor %}
 
 {% for emojicons in site.static_files %}
   {% if emojicons.path contains '/em/nature/' %}
-    .em-{{ emojicons.basename }} {
+    .em{{ emojicons.basename }} {
       background: url('em/nature/{{ emojicons.name }}');
     }
   {% endif %}
@@ -19,7 +19,7 @@
 
 {% for emojicons in site.static_files %}
   {% if emojicons.path contains '/em/food/' %}
-    .em-{{ emojicons.basename }} {
+    .em{{ emojicons.basename }} {
       background: url('em/food/{{ emojicons.name }}');
     }
   {% endif %}
@@ -27,7 +27,7 @@
 
 {% for emojicons in site.static_files %}
   {% if emojicons.path contains '/em/activity/' %}
-    .em-{{ emojicons.basename }} {
+    .em{{ emojicons.basename }} {
       background: url('em/activity/{{ emojicons.name }}');
     }
   {% endif %}
@@ -35,32 +35,32 @@
 
 {% for emojicons in site.static_files %}
   {% if emojicons.path contains '/em/travel/' %}
-    .em-{{ emojicons.basename }} {
+    .em{{ emojicons.basename }} {
       background: url('em/travel/{{ emojicons.name }}');
     }
   {% endif %}
 {% endfor %}
 
 {% for emojicons in site.static_files %}
-  {% if emojicons.path contains '/em/objects/' %}
-    .em-{{ emojicons.basename }} {
-      background: url('em/objects/{{ emojicons.name }}');
+  {% if emojicons.path contains '/em/object/' %}
+    .em{{ emojicons.basename }} {
+      background: url('em/object/{{ emojicons.name }}');
     }
   {% endif %}
 {% endfor %}
 
 {% for emojicons in site.static_files %}
-  {% if emojicons.path contains '/em/symbols/' %}
-    .em-{{ emojicons.basename }} {
-      background: url('em/symbols/{{ emojicons.name }}');
+  {% if emojicons.path contains '/em/symbol/' %}
+    .em{{ emojicons.basename }} {
+      background: url('em/symbol/{{ emojicons.name }}');
     }
   {% endif %}
 {% endfor %}
 
 {% for emojicons in site.static_files %}
-  {% if emojicons.path contains '/em/flags/' %}
-    .em-{{ emojicons.basename }} {
-      background: url('em/flags/{{ emojicons.name }}');
+  {% if emojicons.path contains '/em/flag/' %}
+    .em{{ emojicons.basename }} {
+      background: url('em/flag/{{ emojicons.name }}');
     }
   {% endif %}
 {% endfor %}
@@ -68,7 +68,6 @@
 .em {
   height: 1.5em;
   width: 1.5em;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
